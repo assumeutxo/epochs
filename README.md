@@ -2,7 +2,11 @@
 
 A chain as a list of epochs, declared as data, one list per chain.
 
-An epoch is Bitcoin Core's retarget period: epoch *n* is blocks [2016*n*, 2016*n* + 2015], at one difficulty throughout. Core retargets where `height % 2016 == 0`. The UTXO facts in an entry describe the set after the epoch's last block, which is the state an assumeUTXO snapshot at that height commits to. The format is `EpochIndex` from [bitcoin-desktop/schema](https://github.com/bitcoin-desktop/schema/blob/gh-pages/schema/epoch.jsonld).
+An epoch is Bitcoin Core's retarget period: epoch *n* is blocks [2016*n*, 2016*n* + 2015], at one difficulty throughout. Core retargets where `height % 2016 == 0`.
+
+Epochs are numbered from 0, like heights: a block at height *h* is in epoch `floor(h / 2016)`, so the genesis block is in epoch 0. That is how [BIP 9](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki) numbers retarget periods, and Core counts halvings the same way (`nHeight / nSubsidyHalvingInterval`). The BIPs call it a retarget period, or difficulty adjustment period; "epoch" is the short name here, not the 210,000-block halving era. A number names one epoch and a count says how many: epochs 0–2 are three epochs.
+
+The UTXO facts in an entry describe the set after the epoch's last block, which is the state an assumeUTXO snapshot at that height commits to. The format is `EpochIndex` from [bitcoin-desktop/schema](https://github.com/bitcoin-desktop/schema/blob/gh-pages/schema/epoch.jsonld).
 
 ## Chains
 
