@@ -1,0 +1,85 @@
+{
+  "@context": "https://bitcoin-desktop.github.io/schema/context.jsonld",
+  "@type": "EpochIndex",
+  "chain": "tbtc5",
+  "network": "btc:testnet5",
+  "genesis": "00000000000008c1637e7d3252dc1c333d4546fd6fff6a474b200d674a91d497",
+  "comment": "Testnet5 (BIP95) epochs: epoch n is Core's retarget period n, blocks [2016n, 2016n+2015]. UTXO-set facts are the set after the epoch's last block; epoch 0 includes genesis, whose coinbase is not a coin, so its start set is empty. hashSerialized3 is what Core's dumptxoutset prints at `to`; muhash is Core's gettxoutsetinfo muhash; bytes is the raw blocks.",
+  "epochs": [
+    {
+      "epoch": 0,
+      "from": 0,
+      "to": 2015,
+      "firstHash": "00000000000008c1637e7d3252dc1c333d4546fd6fff6a474b200d674a91d497",
+      "lastHash": "00000000000005912750c25d2d60f320d3863e3a73332a7fbc990f8cc6194c93",
+      "firstTime": 1794632593,
+      "lastTime": 1794683621,
+      "bits": "1a0fffff",
+      "blocks": 2016,
+      "txs": 2054,
+      "bytes": 1170463,
+      "outputs": 7535,
+      "unspent": 6475,
+      "spentOlder": 0,
+      "coins": {
+        "start": 0,
+        "end": 6475
+      },
+      "muhash": {
+        "start": "dd5ad2a105c2d29495f577245c357409002329b9f4d6182c0af3dc2f462555c8",
+        "end": "24fa3e14060535f000ea55f27877ed3fd007249ed01523ef31d08f23e7a17dd3"
+      },
+      "hashSerialized3": "2113a3a90efd190303938952397fddfe5908e7ef9a916408f1aa802c66da9b3e"
+    },
+    {
+      "epoch": 1,
+      "from": 2016,
+      "to": 4031,
+      "firstHash": "00000000000002b460275c363cfa762ede5d89a149133ec92fcca1469378eaac",
+      "lastHash": "00000000000003cce0a1fa7cefe5faa7c5a009512c4fdda6f770a80e374c051e",
+      "firstTime": 1794683676,
+      "lastTime": 1794719961,
+      "bits": "1a03ffff",
+      "blocks": 2016,
+      "txs": 2022,
+      "bytes": 1130348,
+      "outputs": 8336,
+      "unspent": 8156,
+      "spentOlder": 178,
+      "coins": {
+        "start": 6475,
+        "end": 14453
+      },
+      "muhash": {
+        "start": "24fa3e14060535f000ea55f27877ed3fd007249ed01523ef31d08f23e7a17dd3",
+        "end": "3eea677ee4ec52e15a29cd4d9f812f5dd7a8586e153fa98241a6f15f494f825b"
+      },
+      "hashSerialized3": "ce90ad6f1d4fd5c6991257b906c37ec75e8cd172ff8eb007ed32f4ebe62b5415"
+    },
+    {
+      "epoch": 2,
+      "from": 4032,
+      "to": 6047,
+      "firstHash": "00000000000000b3ac9fbeb199525e6a30ece92f83e9429381106884b7e8a1c5",
+      "lastHash": "0000000000000090acdbacc727ee18db959df3a07d758d59d491fdbbca5f1039",
+      "firstTime": 1794719932,
+      "lastTime": 1794979560,
+      "bits": "1a00ffff",
+      "blocks": 2016,
+      "txs": 2156,
+      "bytes": 1078068,
+      "outputs": 5572,
+      "unspent": 4669,
+      "spentOlder": 1476,
+      "coins": {
+        "start": 14453,
+        "end": 17646
+      },
+      "muhash": {
+        "start": "3eea677ee4ec52e15a29cd4d9f812f5dd7a8586e153fa98241a6f15f494f825b",
+        "end": "dfd7a3f1066b1e514937c53c8b2f35fb6389075f61921f99411aa0d71c541bf2"
+      },
+      "hashSerialized3": "d8b8021030a6e47462823fe2c34bbb83d98e82205c38fa978a6c50f84c5dfb3c"
+    }
+  ]
+}
