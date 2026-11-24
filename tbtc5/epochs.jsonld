@@ -80,6 +80,31 @@
         "end": "dfd7a3f1066b1e514937c53c8b2f35fb6389075f61921f99411aa0d71c541bf2"
       },
       "hashSerialized3": "d8b8021030a6e47462823fe2c34bbb83d98e82205c38fa978a6c50f84c5dfb3c"
+    },
+    {
+      "epoch": 3,
+      "from": 6048,
+      "to": 8063,
+      "firstHash": "00000000000000244a968aa490890b5a21adee2891dc44bdaec764e50c3fe97f",
+      "lastHash": "0000000000000022660c6c01fbee0beda7de3c2745132dc634f4f002ca5d6234",
+      "firstTime": 1794979588,
+      "lastTime": 1795337835,
+      "bits": "193fffc0",
+      "blocks": 2016,
+      "txs": 2322,
+      "bytes": 965635,
+      "outputs": 6707,
+      "unspent": 5366,
+      "spentOlder": 96,
+      "coins": {
+        "start": 17646,
+        "end": 22916
+      },
+      "muhash": {
+        "start": "dfd7a3f1066b1e514937c53c8b2f35fb6389075f61921f99411aa0d71c541bf2",
+        "end": "e2c8945a09071453101ab96e921664fde85f10e29ce2d79e5b384ee0628a7e3e"
+      },
+      "hashSerialized3": "35e90bec9330e4987d33ab62c023b7d9fc15a4c9064da4469a9084ccf86399cc"
     }
   ]
 }
