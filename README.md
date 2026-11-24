@@ -12,7 +12,7 @@ The UTXO facts in an entry describe the set after the epoch's last block, which 
 
 | chain | network | epochs | list |
 |---|---|---|---|
-| tbtc5 | testnet5 ([BIP 95](https://github.com/bitcoin/bips/blob/master/bip-0095.md)) | 0–2 | [tbtc5/epochs.jsonld](tbtc5/epochs.jsonld) |
+| tbtc5 | testnet5 ([BIP 95](https://github.com/bitcoin/bips/blob/master/bip-0095.md)) | 0–3 | [tbtc5/epochs.jsonld](tbtc5/epochs.jsonld) |
 
 ## An entry
 
